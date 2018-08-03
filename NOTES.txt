@@ -11,3 +11,6 @@ $ cd hello-world
 $ yarn start
 
 $ sudo npm test
+
+
+registerServiceWorker() - used for caching. See Creating Offline-first Mobile Apps with HTML5
