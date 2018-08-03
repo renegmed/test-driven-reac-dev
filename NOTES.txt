@@ -40,3 +40,13 @@ A map chooser function returns an image file name based on input given to it
 When no input is given to the map chooser function, it returns a default image file name 
 When bad input is given to the map chooser funtion, it returns a default image file name
 
+ 
+Types of Data in React
+
+PROPS                               STATE
+
+Is passed from parent to child      Is modified using setState()
+  
+Is immutable                        Calling setState() triggers re-renderer
+
+                                    State updates may be asynchronous

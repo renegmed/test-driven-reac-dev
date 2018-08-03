@@ -2,10 +2,12 @@ import React, {Component} from 'react';
 import './Map.css';
 
 export default class Map extends Component {
-    render() {        
+    render() {
+        const imagePath = this.props.imagename? 'images/'+this.props.imagename:'images/none.png';
+ 
         return (
             <div className='MapBox'>
-                <img src='images/none.png' alt="No Store Selected"/>
+                <img src={imagePath} alt={this.props.location} />
             </div>
         );
     } 
