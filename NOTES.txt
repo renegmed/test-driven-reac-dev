@@ -12,6 +12,17 @@ $ yarn start
 
 $ sudo npm test
 
+Enzyme - to test runner of choice
+
+Enzyme is a JavaScript Testing utility for React that makes it easier to assert, 
+manipulate, and traverse your React Components' output.
+
+http://airbnb.io/enzyme/docs/installation/index.html
+
+$ npm install --save-dev enzyme enzyme-adapter-react-16 react-test-renderer
+
+
+
 
 registerServiceWorker() - used for caching. See Creating Offline-first Mobile Apps with HTML5
 
@@ -20,7 +31,11 @@ TODO LIST
 
 There should be a button for each store location
 Each store button should display the name of the location
+There should be a map
+There should be a header above the buttons
 Clicking a button passes a value to a function
+
+Completed
 A map chooser function returns an image file name based on input given to it 
 When no input is given to the map chooser function, it returns a default image file name 
 When bad input is given to the map chooser funtion, it returns a default image file name
