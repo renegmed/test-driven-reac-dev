@@ -1,0 +1,13 @@
+Pluralsight lesson: Test Driven Development Using React
+
+$ nvm use --lts
+
+$ npm install -g create-react-app
+ 
+$ create-react-app hello-world
+
+$ cd hello-world
+
+$ yarn start
+
+$ sudo npm test
