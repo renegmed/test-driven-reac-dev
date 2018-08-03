@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import StoreLocator from './StoreLocator';
- 
 import '../App.css';
 
 class App extends Component {

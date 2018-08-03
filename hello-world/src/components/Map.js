@@ -1,7 +1,12 @@
 import React, {Component} from 'react';
+import './Map.css';
 
 export default class Map extends Component {
-    render() {
-        return (<img src='default.jpg'/>);
+    render() {        
+        return (
+            <div className='MapBox'>
+                <img src='images/none.png' alt="No Store Selected"/>
+            </div>
+        );
     } 
 }

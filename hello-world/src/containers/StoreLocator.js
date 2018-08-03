@@ -8,7 +8,7 @@ export default class StoreLocator extends Component {
         return (
             <div>
                 <Header />
-                <Button /> <Button />
+                <div><Button /> <Button /> </div>
                 <Map />
            </div>     
         );
