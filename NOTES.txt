@@ -22,6 +22,9 @@ http://airbnb.io/enzyme/docs/installation/index.html
 $ npm install --save-dev enzyme enzyme-adapter-react-16 react-test-renderer
 
 
+Mock Testing
+
+$ npm install --save-dev axios
 
 
 registerServiceWorker() - used for caching. See Creating Offline-first Mobile Apps with HTML5
@@ -50,3 +53,21 @@ Is passed from parent to child      Is modified using setState()
 Is immutable                        Calling setState() triggers re-renderer
 
                                     State updates may be asynchronous
+
+What should be tested in a React component?
+    Test the output
+    Test the states 
+    Test the events 
+    Test the edge cases 
+
+
+Lifecycle Methods
+    Mount/Unmount
+        constructor()
+        render()
+        componentDidMount()
+        componentWillUnmount()
+    Updating 
+        shouldComponentUpdate()
+        render()
+        componentDidUpdate()

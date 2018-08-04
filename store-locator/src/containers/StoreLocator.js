@@ -10,17 +10,7 @@ export default class StoreLocator extends Component {
         this.state = {
             currentMap: 'none.png'
         }
-        this.shops = [{
-            'location': 'Portland',
-            'address': '123 Portland Dr'
-        }, {
-            'location': 'Astoria',
-            'address': '123 Astoria Dr'
-        }, {
-            'location': '',
-            'address': ''
-        }]
-
+       
         this.chooseMap = this.chooseMap.bind(this);  // bind function to props
     }
 
