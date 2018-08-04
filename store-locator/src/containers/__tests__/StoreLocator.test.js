@@ -1,6 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme/build';
 import StoreLocator from '../StoreLocator';
+import axios from 'axios';
 
 describe("StoreLocator", function(){
     let mountedStoreLocator;
@@ -8,6 +9,17 @@ describe("StoreLocator", function(){
         mountedStoreLocator = shallow(<StoreLocator />);
     });
 
+    it('calls axios.get in #componentDidMount', () => {
+        return mountedStoreLocator.instance().componentDidMount().then( () => {  // async call
+            expect(axios.get).toHaveBeenCalled();
+        });
+    });    
+
+    it('calls axios.get with correct url', () => {
+        return mountedStoreLocator.instance().componentDidMount().then( () => {  // async call
+            expect(axios.get).toHaveBeenCalledWith('http://localhost:3000/data/shops.json');
+        });
+    });    
     it('renders without crashing', () => {
         let mountedStoreLocator = shallow(<StoreLocator />);   
     });
