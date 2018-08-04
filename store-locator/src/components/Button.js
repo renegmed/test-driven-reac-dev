@@ -5,6 +5,8 @@ export default class Button extends Component {
 
     render() {
        
-        return (<button className="location-button">{this.props.location? this.props.location: 'All Locations'}</button>);
+        return (<button value={this.props.location} 
+            onClick={this.props.handleClick} 
+            className="location-button">{this.props.location? this.props.location: 'All Locations'}</button>);
     } 
 }
